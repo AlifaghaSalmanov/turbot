@@ -1,5 +1,8 @@
 # Turbo.az Scraper Telegram Bot
 
+![turbot-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d7299d9a-39ea-4e97-af53-8ef1b01ced49)
+
+
 ## Description
 
 This Telegram bot scrapes the turbo.az website for car listings and sends notifications to users based on their specified filter criteria. The bot allows users to set filters such as car make, model, price range, and other attributes to receive updates when new listings match their preferences. The bot supports multiple users, each with their own filter settings and notifications.

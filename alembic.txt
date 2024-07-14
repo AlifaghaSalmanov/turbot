@@ -1,0 +1,9 @@
+alembic init alembic
+
+alembic revision --autogenerate  -m "create tables"
+
+# Add this code to alembic/env.py
+from database.models import Base
+target_metadata = Base.metadata # remove second target_metadata variable
+
+alembic upgrade head

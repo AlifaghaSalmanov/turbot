@@ -36,8 +36,8 @@ This Telegram bot scrapes the turbo.az website for car listings and sends notifi
 2. Create a virtual environment and activate it:
 
     ```bash
-    python -m venv venv
-    source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+    python -m venv .venv
+    source .venv/bin/activate   # On Windows, use `.venv\Scripts\activate`
     ```
 
 3. Install the required packages:

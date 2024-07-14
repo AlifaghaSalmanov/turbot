@@ -1,6 +1,6 @@
 # Turbo.az Scraper Telegram Bot
 
-![turbot-ezgif com-resize](https://github.com/user-attachments/assets/5a964400-3cbd-465c-af44-7034451dbcbf)
+![Uploading turbot-ezgif.com-resize.gif…]()
 
 
 

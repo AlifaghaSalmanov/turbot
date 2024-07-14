@@ -55,7 +55,13 @@ This Telegram bot scrapes the turbo.az website for car listings and sends notifi
     alembic upgrade head
     ```
 
-6. Run the bot:
+6. Populate the database with initial data:
+
+    ```bash
+    python add_data.py
+    ```
+
+7. Run the bot:
 
     ```bash
     python main.py

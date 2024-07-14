@@ -106,5 +106,5 @@ class WebScrapping:
             print("Running the job")
             # Run pending jobs
             await self.job()
-            print("Sleeping for 1 second")
+
             await asyncio.sleep(os.getenv("SCRAPPER_INTERVAL", 60))

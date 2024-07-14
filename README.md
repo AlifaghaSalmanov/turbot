@@ -50,7 +50,6 @@ This Telegram bot scrapes the turbo.az website for car listings and sends notifi
 
     ```bash
     echo "BOT_TOKEN=your_bot_token" > .env
-    echo "DATABASE_URL=your_database_url" >> .env
     ```
 
 5. Run the Alembic migrations to set up the database:

@@ -1,8 +1,6 @@
 import asyncio
 import logging
-import os
-
-from aiogram import Bot, Dispatcher, executor, types
+from aiogram import Bot, Dispatcher, types
 from aiogram.types import ReplyKeyboardMarkup, ReplyKeyboardRemove
 
 from handlers.bot import BotHandler
@@ -11,10 +9,9 @@ from handlers.user import UserHandler
 from loader import bot, dp
 from tools.web_scrapping import WebScrapping
 
-
 class TelegramBot(BotHandler, FilterHandler, UserHandler):
     def __init__(self):
-        self.loop = asyncio.new_event_loop()
+        pass
 
     async def start_bot(self):
         while True:
@@ -30,7 +27,15 @@ class TelegramBot(BotHandler, FilterHandler, UserHandler):
     async def start(self):
         await asyncio.gather(self.start_bot(), self.start_scrapper())
 
+async def main():
+    telegram_bot = TelegramBot()
+    await telegram_bot.start()
 
 if __name__ == "__main__":
-    telegram_bot = TelegramBot()
-    telegram_bot.loop.run_until_complete(telegram_bot.start())
+    while True:
+        try:
+            asyncio.run(main())
+        except Exception as e:
+            logging.error(f"Bot crashed with error: {e}")
+            logging.info("Restarting bot in 5 seconds...")
+            asyncio.sleep(5)  # Wait for 5 seconds before restarting

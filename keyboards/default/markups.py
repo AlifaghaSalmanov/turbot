@@ -6,7 +6,7 @@ from aiogram.types import (
 )
 
 pervious_message = "👈 geri"
-next_message = "iləri 👉"
+next_message = "irəli 👉"
 
 
 def get_reply_markup(*args):
